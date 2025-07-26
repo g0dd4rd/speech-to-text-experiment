@@ -6,15 +6,12 @@ APID=$!
 
 sleep 5
 
-echo "acrecord pid: $APID" >> /tmp/test_worked
 kill $APID
 
 whisper --language en test.wav &
 WPID=$!
-echo "whisper pid: $WPID:" >> /tmp/test_worked
 
 wait $WPID
-kill $WPID
 
 grep -i "screen reader on" test.txt >> /tmp/test_worked 
 
