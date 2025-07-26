@@ -4,7 +4,7 @@
 arecord -f S32_LE -c1 -r 16000 -t wav -D default test.wav &
 APID=$!
 
-sleep 10 
+sleep 5
 
 echo "acrecord pid: $APID" >> /tmp/test_worked
 kill $APID
