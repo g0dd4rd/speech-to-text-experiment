@@ -1,7 +1,10 @@
 # speech-to-text-experiment
 
 # Installation
-- pip install whisper
+- install Python 3.12
+- pip install whisperx
+- pip install ctranslate2==4.6.0
+- install ffmpeg
 - flatpak install /path/to/io.github.flattool.Ignition.flatpak
 
 # Setup

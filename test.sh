@@ -8,7 +8,7 @@ sleep 5
 
 kill $APID
 
-whisper --language en test.wav &
+whisperx --compute_type int8 --output_format txt --language en test.wav &
 WPID=$!
 
 wait $WPID
